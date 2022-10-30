@@ -71,4 +71,3 @@ while not glfw.window_should_close(window):
 #Уничтожение окна
 glfw.terminate()
 
-
