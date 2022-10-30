@@ -5,7 +5,7 @@ from OpenGL.GLU import *
 import math
 
 def draw():
-    glRotatef(0, 0, 0, 0)#для адееватного отображения
+    glRotatef(0, 0, 0, 0)
 
 #левый кузов
     glColor4f(0.0, 0.0, 1.0, 0.0)
@@ -116,38 +116,46 @@ def draw():
     glEnd()
 
 #черная линия вдоль на левой стороне
-    glLineWidth(40)  # установка ширины линии
-    glColor3f(0, 0, 0)  # желтый цвет для линий
+    glLineWidth(40)
+    glColor3f(0, 0, 0)
     glBegin(GL_LINES)
     glVertex3f(0.5, 0.5, 0.6)
     glVertex3f(0.5, 1.25, 0.6)
     glEnd()
 
 #черная линия вдоль на правой стороне
-    glLineWidth(40)  # установка ширины линии
-    glColor3f(0, 0, 0)  # желтый цвет для линий
+    glLineWidth(40)
+    glColor3f(0, 0, 0)
     glBegin(GL_LINES)
     glVertex3f(1, 0.5, 0.6)
     glVertex3f(1, 1.25, 0.6)
     glEnd()
 
 #черная линия поперёк на левой стороне
-    glLineWidth(40)  # установка ширины линии
-    glColor3f(0, 0, 0)  # желтый цвет для линий
+    glLineWidth(40)
+    glColor3f(0, 0, 0)
     glBegin(GL_LINES)
     glVertex3f(0.5, 1, 1)
     glVertex3f(0.5, 1, 0.6)
     glEnd()
 
 #черная линия поперёк на правой стороне
-    glLineWidth(40)  # установка ширины линии
-    glColor3f(0, 0, 0)  # желтый цвет для линий
+    glLineWidth(40)
+    glColor3f(0, 0, 0)
     glBegin(GL_LINES)
     glVertex3f(1, 1, 1)
     glVertex3f(1, 1, 0.6)
     glEnd()
 
-#колесо 1 кузов левая сторона
+# черная линия вдоль посередине
+    glLineWidth(40)
+    glColor3f(0, 0, 0)
+    glBegin(GL_LINES)
+    glVertex3f(0.5, 1.25, 0.6)
+    glVertex3f(1, 1.25, 0.6)
+    glEnd()
+
+    #колесо 1 кузов левая сторона
     glColor4f(1.0, 1.0, 1.0, 0.0)
     glBegin(GL_QUADS)
     glVertex3f(0.5, 0.1, 0)
@@ -184,32 +192,32 @@ def draw():
     glEnd()
 
 #ручка дверцы на левой стороне
-    glLineWidth(30)  # установка ширины линии
-    glColor3f(0, 0, 0)  # желтый цвет для линий
+    glLineWidth(30)
+    glColor3f(0, 0, 0)
     glBegin(GL_LINES)
     glVertex3f(0.5, 0.8, 0.4)
     glVertex3f(0.5, 0.6, 0.4)
     glEnd()
 
 #ручка дверцы на правой стороне
-    glLineWidth(30)  # установка ширины линии
-    glColor3f(0, 0, 0)  # желтый цвет для линий
+    glLineWidth(30)
+    glColor3f(0, 0, 0)
     glBegin(GL_LINES)
     glVertex3f(1, 0.8, 0.4)
     glVertex3f(1, 0.6, 0.4)
     glEnd()
 
 #фара на левой стороне
-    glLineWidth(50)  # установка ширины линии
-    glColor3f(1, 0.5, 0)  # желтый цвет для линий
+    glLineWidth(50)
+    glColor3f(1, 0.5, 0)
     glBegin(GL_LINES)
     glVertex3f(0.492, 1.27, 0.3)
     glVertex3f(0.492, 1, 0.3)
     glEnd()
 
 #фара на правой стороне
-    glLineWidth(50)  # установка ширины линии
-    glColor3f(1, 0.5, 0)  # желтый цвет для линий
+    glLineWidth(50)
+    glColor3f(1, 0.5, 0)
     glBegin(GL_LINES)
     glVertex3f(1.08, 1.27, 0.3)
     glVertex3f(1.08, 1, 0.3)
